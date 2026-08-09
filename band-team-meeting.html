@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>불핑 하반기 팀 구성 회의 자료</title>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #1e293b;
+      --border: #e2e8f0;
+      --pro: #16a34a;
+      --con: #dc2626;
+      --sub: #64748b;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      margin: 0;
+      padding: 16px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .header {
+      text-align: center;
+      padding: 20px 0;
+      border-bottom: 2px solid var(--border);
+      margin-bottom: 24px;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 1.6rem;
+      color: #0f172a;
+    }
+    .header p {
+      margin: 6px 0 0;
+      color: var(--sub);
+      font-size: 0.9rem;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.2rem;
+      border-bottom: 2px solid #f1f5f9;
+      padding-bottom: 8px;
+      color: #0f172a;
+    }
+    .member-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 12px;
+      margin-top: 12px;
+    }
+    .member-box {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      padding: 10px;
+      border-radius: 8px;
+    }
+    .member-box .pos {
+      font-size: 0.8rem;
+      font-weight: bold;
+      color: var(--primary);
+      display: block;
+      margin-bottom: 4px;
+    }
+    .member-box .names {
+      font-size: 0.95rem;
+    }
+    .tag {
+      font-size: 0.75rem;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: #e2e8f0;
+      color: #334155;
+    }
+    .option-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    .option-title {
+      font-size: 1.15rem;
+      font-weight: bold;
+    }
+    .badge {
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+    .badge-blue { background: #dbeafe; color: #1e40af; }
+    .badge-green { background: #d1fae5; color: #065f46; }
+    ul { padding-left: 20px; margin: 8px 0; }
+    li { margin-bottom: 6px; font-size: 0.95rem; }
+    .pro { color: var(--pro); font-weight: bold; }
+    .con { color: var(--con); font-weight: bold; }
+    .note {
+      background: #fffbe3;
+      border-left: 4px solid #f59e0b;
+      padding: 10px;
+      font-size: 0.85rem;
+      margin-top: 10px;
+      border-radius: 0 6px 6px 0;
+    }
+    .highlight { background: #eff6ff; border: 1px solid #bfdbfe; }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <h1>🎸 불핑 하반기 팀 구성 회의 자료</h1>
+    <p>안건: 3팀 체제 vs 2팀(또는 2+0.5유닛) 체제 의결</p>
+  </div>
+
+  <!-- 주요 일정 및 진행 방침 -->
+  <div class="card" style="border-left: 4px solid var(--primary);">
+    <h2>📅 주요 일정 및 진행 방침</h2>
+    <ul>
+      <li><b>공연 일정:</b> 3월 6일 또는 3월 20일 진행</li>
+      <li><b>목표 기한:</b> 팀 구성 및 곡 구성은 <b>8월 내 완료</b></li>
+    </ul>
+  </div>
+
+  <!-- 현재 멤버 현황 -->
+  <div class="card">
+    <h2>📋 현재 포지션별 멤버 현황</h2>
+    <div class="member-grid">
+      <div class="member-box">
+        <span class="pos">🥁 드럼 (3명)</span>
+        <div class="names">요시, 스노이, 테일러</div>
+      </div>
+      <div class="member-box">
+        <span class="pos">🎸 베이스 (3명)</span>
+        <div class="names">유수, 마치, 도미닉</div>
+      </div>
+      <div class="member-box">
+        <span class="pos">🎸 메인 기타 (4명)</span>
+        <div class="names">망, 멜롱, 베넷, 도미닉</div>
+      </div>
+      <div class="member-box">
+        <span class="pos">🎸 서브/연습 기타</span>
+        <div class="names">모아나 <span class="tag">보컬/2nd</span><br>로아, 체인 <span class="tag">연습생</span></div>
+      </div>
+      <div class="member-box">
+        <span class="pos">🎹 건반 (2명)</span>
+        <div class="names">미카, 올라프</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 안건 1: 3팀 구성 -->
+  <div class="card">
+    <div class="option-header">
+      <span class="option-title">안 1. 3개 팀 구성</span>
+      <span class="badge badge-blue">독립 연습 용이</span>
+    </div>
+    <ul>
+      <li><span class="pro">[장점]</span> 연습 시간대를 팀별로 나누어 개별 조율하기에 가장 용이함.</li>
+      <li><span class="pro">[구성]</span> 메인 기타 3명(망, 멜롱, 베넷)을 각 팀에 1명씩 배치. (도미닉은 베이스 담당)</li>
+      <li><span class="con">[단점]</span> <b>Bus Factor(결원 리스크)가 매우 높음.</b> 한 명이라도 빠지면 팀 연습 차질.</li>
+      <li><span class="con">[조건]</span> 보컬(모아나 등)이 세컨드 기타를 배워서 메인 기타 부담을 분산해야 함.</li>
+      <li><span class="con">[특이사항]</span> 건반이 2명이므로 <b>마지막 1개 팀은 건반 없이</b> 진행되어야 함.</li>
+    </ul>
+  </div>
+
+  <!-- 안건 2: 2팀 구성 (1드럼 팀 / 2드럼 팀 체제) -->
+  <div class="card highlight">
+    <div class="option-header">
+      <span class="option-title">안 2. 2개 팀 구성 (1드럼 팀 / 2드럼 팀 체제)</span>
+      <span class="badge badge-green">안정적인 전력</span>
+    </div>
+    <ul>
+      <li><span class="pro">[장점]</span> 1학기 운영 방식과 유사하여 안정적. 기타 전공자/메인급을 팀당 2명씩 풍부하게 배치 가능.</li>
+      <li><span class="pro">[운영]</span> 드럼 인원에 맞춰 <b>1드럼(1명) 팀 / 2드럼(2명) 팀</b> 구조로 분할하여 운영.</li>
+      <li><span class="pro">[곡 분배]</span> 2드럼 팀은 1드럼 팀보다 많은 곡을 가져가며, 세션들이 곡을 적절히 나눠 수행하여 과부하 방지.</li>
+      <li><span class="con">[단점]</span> <b>조율 복잡도 증가:</b> 팀당 인원이 많아 전체 연습 일정을 조율하기 다소 까다로우며, 드럼 로테이션 및 곡별 세션 배정 과정이 복잡해질 수 있음.</li>
+      <li><span class="con">[참고사항]</span> 도x닉은 구성에 따라 기타와 베이스를 모두 담당(겸임)해야 할 수도 있음.</li>
+    </ul>
+  </div>
+
+  <!-- 비교 요약 테이블 -->
+  <div class="card">
+    <h2>⚖️ 안건 비교 요약</h2>
+    <ul>
+      <li><b>연습 일정:</b> 3팀 (독립적/조율 편함) vs 2팀 (인원이 많아 시간 맞추기 난이도 있음 — 단, 당일 연습할 곡에 맞춰 필요한 세션 멤버만 참석 가능)</li>
+      <li><b>사운드 완결성:</b> 3팀 (건반 없는 팀 발생, 기타 부담 높음) vs 2팀 (기타 2명/건반/베이스 안정적)</li>
+      <li><b>리스크 관리:</b> 3팀 (1명 부재 시 치명적) vs 2팀 (서브/연습생 활용 및 유연한 대체 가능)</li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>
